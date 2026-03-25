@@ -1,0 +1,10 @@
+<h1>Frontend 🚀</h1>
+<button onclick="callApi()">Call Backend</button>
+
+<script>
+function callApi() {
+  fetch("http://backend-service:3000/api")
+    .then(res => res.text())
+    .then(data => alert(data));
+}
+</script>
